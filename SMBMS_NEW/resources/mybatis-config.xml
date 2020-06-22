@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 配置log4j用作日志输出 -->
+	<settings>
+		<setting name="logImpl" value="LOG4J"></setting>
+		<!-- 延时加载 -->
+		<setting name="lazeLoadingEnabled" value="false"/>
+		<!-- <setting name="autoMappingBehavior" value="FULL"></setting> -->
+	</settings>
+	<!-- 配置xml文件映射的javaBean别名 -->
+	<typeAliases>
+		<package name="cn.smbms.pojo"/>
+	</typeAliases>
+</configuration>
